@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i ,j,n;
+    cin>>n;
+    i=n;
+    while(i<=n && i>=0){
+        if(i%2==0){
+            i=i-1;
+            cout<<i<<endl;
+        }
+        else {
+            cout<<i<<endl;
+        }
+    i=i-2;
+    }
+    j=1;
+    j=j+1;
+    while(j<=n && j>=0){
+        cout<<j<<endl;
+        j=j+2;
+    }
+    
+    return 0;
+}
