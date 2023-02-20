@@ -1,0 +1,85 @@
+#include <iostream>
+using namespace std;
+int main() {
+   int tr;
+   cin>>tr;
+   int row;
+   row=1;
+// ROW 1 
+    int n=1;
+    while(n<=tr){
+    cout<<"*";
+    n++;
+    }
+    cout<<endl;
+  
+   // ROW2 TO ROW5
+row=2;
+while(row<=tr-4)
+   {
+      // stars 
+    int i=1;
+    while(i<=(tr-row)-3)
+    {
+        cout<<"*";
+        i=i+1;
+    }
+ // space 
+    int j=1;
+    while(j<=2*row-3){
+        cout<<" ";
+        j++;
+    }
+   
+ // stars after gaps
+    int k=1;
+    while(k<=(tr-row)-3)
+    {
+        cout<<"*";
+        k=k+1;
+    }
+    cout<<endl;
+    row=row+1;
+}
+
+//==========================================================
+
+// ROW 6 to row 8
+   row=6;
+  while(row<=tr-1)
+  {
+      // star 
+   int l =1;
+   while(l<=row-4){
+    cout<<"*";
+    l=l+1;
+ }
+
+// spaces 
+
+int x=1;
+while(x<=(2*tr-2*row)-1){
+    cout<<" ";
+    x=x+1;
+}
+ // stars afters spaces
+
+   int y=1;
+   while(y<=row-4){
+       cout<<"*";
+       y=y+1;
+   }
+ cout<<endl;
+ row=row+1;
+  }
+  
+  //====================================================
+  // ROW NO 9 LAST ROW 
+  int Z=1;
+    while(Z<=tr){
+    cout<<"*";
+    Z++;
+    }
+ 
+return 0;
+}
