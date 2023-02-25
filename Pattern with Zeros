@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int tr,rowno,num;
+cin>>tr;
+cout<<1;
+cout<<endl;
+rowno=2;
+while(rowno<=tr){
+    //digit
+    int i=1;
+    num=rowno;
+    while(i==1){
+        cout<<num<<'\t';
+        i++;
+        num++;
+    }
+    
+    //zero
+    int j=1;
+    while(j<=rowno-2){
+        cout<<0<<'\t';
+        j++;
+    }
+    //digit
+     int k=1;
+    num=rowno;
+    while(k==1){
+        cout<<num;
+        k++;
+        num++;
+    }
+    cout<<endl;
+    rowno=rowno+1;
+}
+    
+    return 0;
+}
