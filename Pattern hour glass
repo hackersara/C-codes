@@ -1,0 +1,101 @@
+
+#include <iostream>
+using namespace std;
+int main() 
+{
+   
+   int n;
+   cin>>n;
+   int row;
+   row=1;
+   
+   int tr=2*n+1;
+   while(row<=tr-(n+1))
+   {
+    
+    
+       // decrement 
+   int num = n-row+1;
+   int i=1;
+   while(i<=n-row+1)
+   {
+      cout<<num<<" ";
+      num=num-1;
+      i=i+1;
+   }
+   
+   // zeroes 
+    
+    cout<<0<<" ";
+ 
+ // increment 
+  num=1;
+  int j=1;
+  while(j<=n-row+1)
+  {
+    cout<<num<<" ";
+    num=num+1;
+    j++;
+  }
+   
+    
+    cout<<endl;
+    cout<<" "<<" ";
+    
+    // space 
+    
+    int k=1;
+    while(k<=row-1)
+    {
+    cout<<" "<<" ";
+    k++;
+    }
+    row=row+1;
+   }
+   cout<<0<<endl;
+   
+   
+   // ======================================= 
+   row=n+2;
+   while(row<=tr)
+   {
+      
+   // space 
+   
+   int x=1;
+   while(x<=tr-row)
+   {
+    cout<<" "<<" ";
+    x++;
+   }
+
+// decrement 
+   int num=row-(tr+1)/2;
+ 
+   int y=1;
+   while(y<=row-(tr+1)/2)
+   {
+    cout<<num<<" ";
+    num=num-1;
+    y++;
+   }
+       
+  cout<<0<<" ";
+  
+  // increment 
+  num=1;
+  int z=1;
+  while(z<=row-(tr+1)/2)
+  {
+    cout<<num<<" ";
+    num=num+1;
+    z=z+1;
+  }
+    
+    cout<<endl;
+    row=row+1;
+   }
+ 
+  
+    return 0;
+}
