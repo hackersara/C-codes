@@ -1,0 +1,87 @@
+
+#include <iostream>
+using namespace std;
+int main() {
+    
+    int row=1;
+    int num;
+    int n;
+    cin>>n;
+    int tr=2*n-1;
+    
+    
+    while(row<=(tr+1)/2){
+    
+         // space 
+    int i=1;
+    while(i<=(tr+1)/2 - row){
+    cout<<'\t';
+    i++;
+    }
+    
+    // increment
+    
+    num=row;
+    int j=1;
+    while(j<=row){
+    cout<<num<<'\t';
+    num++;// ------> num =4 is here for line second 
+    j++;
+    }
+    
+    // DECREMENT 
+    num=num-2; //------>  to print 2 we need to 
+                         //minus 2 from num =4 
+   
+    int k =1;
+    while(k<=row-1)
+    {
+    cout<<num<<'\t';
+    num=num-1;
+    k++;
+    }
+    
+    cout<<endl;
+    row=row+1;
+    }
+    
+   //==================================== pattern 2
+   
+   row=n+1;
+   while(row<=tr)
+   {
+      
+       // space 
+   int m=1;
+   while(m<=row-(tr+1)/2)
+   {
+      cout<<'\t';
+      m++;
+   }
+    
+    // increment 
+    num=tr-row+1;
+    int l=1;
+    while(l<=tr-row+1)
+    {
+        cout<<num<<'\t';
+        num++;
+        l++;
+    }
+  
+  // decrement 
+  num=num-2;
+  int x=1;
+  while(x<=tr-row)
+  {
+      cout<<num<<'\t';
+      num=num-1;
+      x++;
+  } 
+     cout<<endl;
+     row=row+1;
+   }
+  
+
+    return 0;
+}
