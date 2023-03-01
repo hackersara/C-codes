@@ -1,0 +1,26 @@
+
+#include <iostream>
+using namespace std;
+int main() {
+    
+    int n1,n2, max_num;
+    cin>>n1>>n2;
+    
+    int n=1;
+    
+    // to get the greater of n1 n n2 
+    max_num = (n1 > n2) ? n1 : n2;  
+    
+    while(n)
+    {
+    
+    if( max_num % n1==0 && max_num % n2==0 )
+    {
+    cout<<max_num;
+    break;
+    }
+    
+     max_num++;
+    }
+    return 0;
+}
