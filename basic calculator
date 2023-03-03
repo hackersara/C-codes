@@ -52,7 +52,7 @@ int main() {
    {
     cout<<"Invalid operation. Try again."<<endl;
    }
-   cin>>ch;
+   cin>>ch; // cin is in the loop to get input again and again
    }
     return 0;
 }
