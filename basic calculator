@@ -1,0 +1,58 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+   
+   char ch;
+   cin>>ch;
+   int num1,num2;
+   
+   
+   while(ch!=0){
+   if(ch=='*' or ch=='-' or ch== '/' or ch== '%')
+   {    
+       
+       cin>>num1>>num2;
+       
+    switch(ch) {
+
+    case '+':
+      cout  << num1 + num2;
+      break;
+
+    case '-':
+      cout << num1 - num2;
+      break;
+
+    case '*':
+      cout << num1 * num2;
+      break;
+
+    case '/':
+      cout << num1 / num2;
+      break;
+      
+    case '%':
+      cout << num1 % num2;
+      break;
+   }
+   }
+   
+   else if(ch>='A'&& ch<='Z')
+   {
+    return 0;
+   }
+   
+   else if(ch>='a'&& ch<='z')
+   {
+     return 0; 
+   }
+   
+   else
+   {
+    cout<<"Invalid operation. Try again.";
+   }
+   cin>>ch;
+   }
+    return 0;
+}
