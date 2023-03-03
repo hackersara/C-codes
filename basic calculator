@@ -9,7 +9,7 @@ int main() {
    
    
    while(ch!=0){
-   if(ch=='*' or ch=='-' or ch== '/' or ch== '%')
+   if(ch=='*' or ch=='-' or ch== '/' or ch== '%' or ch=='+')
    {    
        
        cin>>num1>>num2;
@@ -17,23 +17,23 @@ int main() {
     switch(ch) {
 
     case '+':
-      cout  << num1 + num2;
+      cout  << num1 + num2<<endl;
       break;
 
     case '-':
-      cout << num1 - num2;
+      cout << num1 - num2<<endl;
       break;
 
     case '*':
-      cout << num1 * num2;
+      cout << num1 * num2<<endl;
       break;
 
     case '/':
-      cout << num1 / num2;
+      cout << num1 / num2<<endl;
       break;
       
     case '%':
-      cout << num1 % num2;
+      cout << num1 % num2<<endl;
       break;
    }
    }
@@ -50,7 +50,7 @@ int main() {
    
    else
    {
-    cout<<"Invalid operation. Try again.";
+    cout<<"Invalid operation. Try again."<<endl;
    }
    cin>>ch;
    }
