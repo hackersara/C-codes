@@ -1,0 +1,32 @@
+// LARGEST ELEMENT IN AN ARRAY 
+#include <iostream>
+using namespace std;
+int main() {
+   
+   
+   int n;
+   cin>>n;
+   int arr[n];
+   
+   // input in an array 
+   
+   for(int i=0; i<=n-1;i++)
+   {
+      cin>>arr[i];
+   }
+   
+   // smallest in an array 
+   
+   int smallest =arr[0];
+   
+   for(int i=0 ;i<=n-1;i++ )
+   {
+     if(smallest>arr[i])
+     {
+        smallest=arr[i]; 
+     }
+   }
+    cout<<"smallest no. is" <<" "<<smallest;
+    
+   return 0;
+}
