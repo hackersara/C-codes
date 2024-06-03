@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 void bubblesort(int arr[],int n){
-bool swapped;
+int swapped=0;
  for(int count=1;count<n;count++){ 
     for(int i=0;i<n-count;i++){ 
         if(arr[i]>arr[i+1]){
@@ -9,7 +9,7 @@ bool swapped;
             swapped=1;
         }
     }
-    if(swapped==1){
+    if(swapped==0){
         break;
     }
   }
